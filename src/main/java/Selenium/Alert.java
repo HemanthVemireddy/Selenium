@@ -1,16 +1,17 @@
-package org.example.Selenium;
+package Selenium;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Alert {
-    public static String Driver ="webdriver.chrome.driver";
+   // public static String Driver ="webdriver.chrome.driver";
 
-    public static String path ="H:\\Drivers\\ChromeDriver\\chromedriver-win64\\chromedriver.exe";
+    //public static String path ="H:\\Drivers\\ChromeDriver\\chromedriver-win64\\chromedriver.exe";
 
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty(Driver, path);
-
+        //System.setProperty(Driver, path);
+        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://mail.rediff.com/cgi-bin/login.cgi");

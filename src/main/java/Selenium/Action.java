@@ -1,4 +1,4 @@
-package org.example.Selenium;
+package Selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class ContextClick {
+public class Action {
     public static String Driver ="webdriver.chrome.driver";
 
     public static String path ="H:\\Drivers\\ChromeDriver\\chromedriver-win64\\chromedriver.exe";

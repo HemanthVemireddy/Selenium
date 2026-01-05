@@ -1,23 +1,14 @@
-package org.example.Selenium;
+package Selenium;
 
 
 import org.openqa.selenium.Cookie;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.PrintStream;
-import java.sql.Driver;
 
 public class Cookies {
     public static void main(String[] args) throws FileNotFoundException {
-        WebElements web = new WebElements();
-        String location = web.getDriver();
-        String path = web.getPath();
-
-        System.setProperty(location,path);
 
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.browserstack.com/guide/how-to-handle-cookies-in-selenium");
